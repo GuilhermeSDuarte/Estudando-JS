@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula04</title>
+    <style>
+        body{
+            background: #88888a;
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quarta Aula</h1>
+    <p>Iniciando estudos de DOM.</p>
+    <div id="click">Click em Mim</div>
+    <script>
+        //getElementsByTagName Pega as informações da tag.
+        //getElementsByName Pega as informações do nome do elemento.
+        //getElementsByClassName Pega as informações da classe.
+        //getElementById Pega as informações do Id.
+        //querySelector 
+        var d = document.getElementById('click')
+        d.style.background = 'green'
+        var p = document.querySelector('div#click')
+        p.style.color = 'black'
+    </script>
+</body>
+</html>
