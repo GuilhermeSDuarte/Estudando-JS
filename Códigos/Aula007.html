@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula07</title>
+</head>
+<body>
+    <h1>Sétima Aula</h1>
+    <h1>Sistemas de multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="Verificar" onclick="calcular()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        function calcular(){
+
+        var txtv = document.getElementById('txtvel')
+        var res = document.getElementById('res')
+        var vel = Number(txtv.value)
+        res.innerHTML = `<p>Sua velocidade atual é de ${vel}km/h<p>`
+        if(vel > 60){
+            res.innerHTML = '<p>Você ultrapassou o limite de velocidade permitida, por isso está multado<p>'
+        }
+
+
+        }
+
+    </script>
+
+    <h1>Sistema para verificar se é estrangeiro.</h1>
+    Pais de Origem: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="pais()">
+    <div id="p">
+
+    </div>
+
+    <script>
+
+        function pais(){
+            var origem = document.getElementById('txtpais')
+            var respo = document.getElementById('p')
+            var ori = origem.value
+
+            if(ori != 'Brasil' && ori != 'brasil'){
+                respo.innerHTML = '<p>Você é um estrangeiro.<p>'
+            }
+            else{
+                respo.innerHTML = '<p>Você é Brasileiro.<p>'
+            }
+        }
+    </script>
+
+</body>
+</html>
