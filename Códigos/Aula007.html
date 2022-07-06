@@ -43,11 +43,11 @@
     <script>
 
         function pais(){
-            var origem = document.getElementById('txtpais')
+            var origem = document.getElementById('txtpais').value
             var respo = document.getElementById('p')
-            var ori = origem.value
+            //var ori = origem.value
 
-            if(ori != 'Brasil' && ori != 'brasil'){
+            if(origem != 'Brasil' && origem != 'brasil'){
                 respo.innerHTML = '<p>Você é um estrangeiro.<p>'
             }
             else{
