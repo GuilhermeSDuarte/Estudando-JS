@@ -1,11 +1,16 @@
 body{
-    background: rgb(100, 100, 226);
+    background: rgb(134, 134, 240);
     font: normal 15pt arial;
 }
 
 header{
     color: white;
     text-align: center;
+}
+
+div {
+    text-align: center;
+    padding: auto;
 }
 
 section{
